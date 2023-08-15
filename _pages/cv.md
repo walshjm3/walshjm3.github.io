@@ -1,9 +1,9 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: 
 nav: true
 nav_order: 2
-cv_pdf: resume.pdf
+cv_pdf: jenniferwalsh_online.pdf
 description: 
 ---
