@@ -1,9 +1,9 @@
 ---
-layout: about
-title: about
+layout: 
+title: 
 permalink: /
 nav: false
-nav_order: 1
+nav_order: 
 subtitle:
 
 profile:
