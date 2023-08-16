@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jennifer-walsh.com/sitemap.xml
+Sitemap: https://www.jennifer-walsh.com/sitemap.xml
