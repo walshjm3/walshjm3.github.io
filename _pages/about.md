@@ -28,4 +28,6 @@ My research studies agency frictions and their impacts on financial markets, usi
 
 ### Working Papers
 
-**Margin or Mission? The Effects of CEOs on Hospital Outcomes**, with Nagisa Tadjfar. 2022.
+**How Do Nonprofits Use Cash Windfalls? Evidence from $5B in Unrestricted Donations**
+
+**Margin or Mission? The Effects of CEOs on Hospital Outcomes**, with Nagisa Tadjfar
