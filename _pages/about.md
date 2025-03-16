@@ -29,10 +29,6 @@ My research studies agency frictions and their impacts on financial markets, usi
 ### Working Papers
 
 **How Do Nonprofits Use Cash Windfalls? Evidence from $5B in Unrestricted Donations** <span class="toggle-btn">▼</span>
-<div class="abstract-content" style="display: none;">
-How do nonprofits use unrestricted gifts? Donations to 501(c)(3)'s are increasingly given unrestricted due to concerns that restrictions on use unduly constrain nonprofits. I study the effect of such funding on recipients using a $5B sample of MacKenzie Scott's gifts from 2019-2022 to 567 nonprofits. I find that, within two years of receiving the gift, nonprofits received 64% of the average gift in additional contributions and spent the entirety of the average gift compared to similar untreated nonprofits. After giving away 26% as grants to individuals and other nonprofits, recipients spent these funds proportionally to their previous activities. Two years after the gift, CEO compensation increased by $20.9K (9%), average director compensation increased by $12K (12.1%), and average compensation of non-senior employees increased by $2.7K (5.8%) compared to similar untreated nonprofits. For every dollar of unrestricted gift and additional contributions, the present value of executive compensation increased by $0.23. Recipient nonprofits do not become less constrained in allocating their revenue to indirect costs or savings. In sum, nonprofits that receive this set of unrestricted gifts do not behave in the hypothesized liquidity-constrained manner.
-</div>
-
 
 **Margin or Mission? The Effects of CEOs on Hospital Outcomes**, with Nagisa Tadjfar <span class="toggle-btn">▼</span>
 
