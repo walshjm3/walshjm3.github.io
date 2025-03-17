@@ -1,5 +1,10 @@
 ---
 id: 1
+title: "Widespread Macromolecular Interaction Perturbations in Human Genetic Disorders"
 journal: "Cell"
+volume: 161
+issue: 3
+abstract: "How disease-associated mutations impair protein activities in the context of biological networks remains mostly undetermined. Although a few renowned alleles are well characterized, functional information is missing for over 100,000 disease-associated variants. Here we functionally profile several thousand missense mutations across a spectrum of Mendelian disorders using various interaction assays. The majority of disease-associated alleles exhibit wild-type chaperone binding profiles, suggesting they preserve protein folding or stability. While common variants from healthy individuals rarely affect interactions, two-thirds of disease-associated alleles perturb protein-protein interactions, with half corresponding to “edgetic” alleles affecting only a subset of interactions while leaving most other interactions unperturbed. With transcription factors, many alleles that leave protein-protein interactions intact affect DNA binding. Different mutations in the same gene leading to different interaction profiles often result in distinct disease phenotypes. Thus disease-associated alleles that perturb distinct protein activities rather than grossly affecting folding and stability are relatively widespread."
 year: 2014
+link: "https://www.cell.com/cell/fulltext/S0092-8674(15)00430-4"
 ---

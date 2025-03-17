@@ -60,24 +60,3 @@ title: Home
     <span> (with {{ paper.authors }})</span>
   {% endif %}
 </p>
-
-<!-- Toggle for Abstract -->
-<p>
-  <a 
-    class="d-inline-flex align-items-center collapsed" 
-    style="color: black; text-decoration: none; cursor: pointer;"
-    data-toggle="collapse"
-    href="#{{ paper.id }}"
-    role="button"
-    aria-expanded="false"
-    aria-controls="{{ paper.id }}"
-  >
-    Abstract <i class="fas fa-caret-right ml-1"></i>
-  </a>
-</p>
-
-<!-- Collapsible abstract section -->
-<div class="collapse ml-4 mb-3" id="{{ paper.id }}">
-  <p>{{ paper.abstract }}</p>
-</div>
-{% endfor %}
