@@ -32,14 +32,14 @@ title: Home
        class="d-inline-flex align-items-center collapsed" 
        style="color: black; text-decoration: none; cursor: pointer;"
        data-toggle="collapse"
-       href="#collapse-{{ paper.id | slugify }}"
+       href="#collapse-{{ paper.id | remove: '/working/' }}"
        role="button"
        aria-expanded="false"
-       aria-controls="collapse-{{ paper.id | slugify }}"
+       aria-controls="collapse-{{ paper.id | remove: '/working/' }}"
     >
       <i class="fas fa-caret-right mr-1"></i> Abstract
     </a>
-    <div class="collapse ml-4 mb-3" id="collapse-{{ paper.id }}">
+    <div class="collapse ml-4 mb-3" id="collapse-{{ paper.id | remove: '/working/' }}">
       <p>{{ paper.abstract }}</p>
     </div>
   </li>
