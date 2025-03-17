@@ -8,25 +8,27 @@ title: Home
 <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> and a research assistant at the <a href="https://www.nber.org/" rel="external nofollow noopener" target="_blank">National Bureau of Economic Research</a> for Professor Claudia Goldin. Before economics, I did research in computational biology.</p>
 
 <p>My research studies agency frictions and their impacts on financial markets, using tools from public finance, industrial organization, and econometrics.</p>
+
 ## Working Papers
 
 {% assign sorted_works = site.working | sort: 'id' %}
 {% for paper in sorted_works %}
-<!-- Paper title line -->
+<!-- Paper title line with numbering -->
 <p>
+  <span>{{ forloop.index }}. </span>
   <strong>
     <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
-      {{ paper.title }}.
+      {{ paper.title }}
     </a>
-  </strong>
+  </strong>.
   {% if paper.journal %}
-    <em>{{ paper.journal }}</em>
+    <em> {{ paper.journal }}</em>
   {% endif %}
   {% if paper.authors %}
     <span> (with {{ paper.authors }})</span>
   {% endif %}
   {% if paper.link %}
-    <span> (<a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">Link</a>)</span>
+    <span> (<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Link</a>)</span>
   {% endif %}
 </p>
 
@@ -41,7 +43,7 @@ title: Home
     aria-expanded="false"
     aria-controls="collapse-{{ paper.id }}"
   >
-    Abstract <i class="fas fa-caret-right ml-1"></i>
+    <i class="fas fa-caret-right mr-1"></i> Abstract
   </a>
 </p>
 
@@ -55,26 +57,22 @@ title: Home
 
 {% assign sorted_pubs = site.publications | sort: 'id' %}
 {% for paper in sorted_pubs %}
-<!-- Paper title line -->
+<!-- Paper title line with numbering -->
 <p>
+  <span>{{ forloop.index }}. </span>
   <strong>
     <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
-      {{ paper.title }}.
+      {{ paper.title }}
     </a>
-  </strong>
+  </strong>.
   {% if paper.journal %}
-    <em>{{ paper.journal }}</em>
+    <em> {{ paper.journal }}</em>
   {% endif %}
   {% if paper.authors %}
     <span> (with {{ paper.authors }})</span>
   {% endif %}
   {% if paper.link %}
-    <span> (<a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">Link</a>)</span>
+    <span> (<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Link</a>)</span>
   {% endif %}
 </p>
-
-<!-- Directly display abstract for Publications (no toggle) -->
-{% if paper.abstract %}
-<p class="ml-4 mb-3">{{ paper.abstract }}</p>
-{% endif %}
 {% endfor %}
