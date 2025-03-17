@@ -11,19 +11,42 @@ title: Home
 
 ## Working Papers
 
-{% comment %}
-Loop over your papers array in _data/papers.yml:
-site.data.papers = [
-  {
-    "id": "paper1",
-    "title": "How Do Nonprofits Use Cash Windfalls?",
-    "coauthors": "with Some Coauthor",
-    "abstract": "Abstract text here...",
-    "link": "https://example.com/paper1.pdf"
-  },
-  {...}
-]
-{% endcomment %}
+{% for paper in site.working %}
+<!-- Title + toggle arrow -->
+<p>
+  <a 
+    class="toggle-link collapsed d-inline-flex align-items-center" 
+    style="color: black; text-decoration: none;"
+    data-toggle="collapse"
+    href="#{{ paper.id }}"
+    role="button"
+    aria-expanded="false"
+    aria-controls="{{ paper.id }}"
+  >
+    <!-- Arrow icon (points right by default) -->
+    <i class="fas fa-caret-right mr-2"></i>
+    <!-- Paper title -->
+    <strong>{{ paper.title }}</strong>
+    {% if paper.authors %}
+      <span class="ml-2">{{ paper.authors }}</span>
+    {% endif %}
+  </a>
+</p>
+
+<!-- Collapsible abstract section -->
+<div class="collapse ml-4" id="{{ paper.id }}">
+  <p>{{ paper.abstract }}</p>
+  {% if paper.link %}
+    <p>
+      <a href="{{ paper.link }}" target="_blank" rel="noopener">
+        Read Online
+      </a>
+    </p>
+  {% endif %}
+</div>
+{% endfor %}
+
+## Publications
 
 {% for paper in site.publications %}
 <!-- Title + toggle arrow -->
