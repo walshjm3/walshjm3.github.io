@@ -21,7 +21,7 @@ title: Home
       {{ paper.title }}
     </a>
   </strong>.
-  {% if paper.link %}
+  {% if paper.ssrn %}
     <span> [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]</span>
   {% endif %}
   {% if paper.authors %}
