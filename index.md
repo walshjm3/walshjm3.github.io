@@ -24,6 +24,8 @@ title: Home
   {% if paper.ssrn %}
     <span> [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]</span>
   {% endif %}
+</p>
+<p>
   {% if paper.authors %}
     <span> with {{ paper.authors }}</span>
   {% endif %}
@@ -62,9 +64,13 @@ title: Home
       {{ paper.title }}.
     </a>
   </strong>
-  {% if paper.authors %}
+</p>
+<p>
+{% if paper.authors %}
     <span> with {{ paper.authors }}</span>
   {% endif %}
+</p>
+<p>
   {% if paper.journal %}
     <em> {{ paper.journal }}</em>,<em> {{paper.year}}</em>
   {% endif %}
