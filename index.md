@@ -59,11 +59,11 @@ title: Home
 <p>
   <strong>
     <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
-      {{ paper.title }}
+      {{ paper.title }}.
     </a>
   </strong>
   {% if paper.journal %}
-    <em> – {{ paper.journal }}</em>
+    <em>{{ paper.journal }}</em>
   {% endif %}
   {% if paper.authors %}
     <span> (with {{ paper.authors }})</span>

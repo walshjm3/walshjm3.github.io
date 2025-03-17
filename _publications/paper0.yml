@@ -1,8 +1,9 @@
 ---
-id: 2
+id: 1
 title: "A Proteome-Scale Map of the Human Interactome Network"
 authors: "TODO"
 volume: 159
+abstract: "Just as reference genome sequences revolutionized human genetics, reference maps of interactome networks will be critical to fully understand genotype-phenotype relationships. Here, we describe a systematic map of >14,000 high-quality human binary protein-protein interactions. At equal quality, this map is >30% larger than what is available from small-scale studies published in the literature in the last few decades. While currently available information is highly biased and only covers a relatively small portion of the proteome, our systematic map appears strikingly more homogeneous, revealing a `broader' human interactome network than currently appreciated. The map also uncovers significant interconnectivity between known and candidate cancer gene products, providing unbiased evidence for an expanded functional cancer landscape, while demonstrating how high-quality interactome models will help `connect the dots' of the genomic revolution."
 issue: 5
 year: "2014"
 journal: "Cell"

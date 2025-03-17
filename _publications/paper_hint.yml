@@ -1,7 +1,7 @@
 ---
-id: 3
+id: 4
 title: "HiNT: a computational method for detecting copy number variations and translocations from Hi-C data"
-coauthors: "Su Wang, Soohyun Lee, Chong Chu, Dhawal Jain, Peter Kerpedjiev, Geoffrey M. Nelson, Jennifer M. Walsh, Burak H. Alver & Peter J. Park"
+authors: "Su Wang, Soohyun Lee, Chong Chu, Dhawal Jain, Peter Kerpedjiev, Geoffrey M. Nelson, Jennifer M. Walsh, Burak H. Alver & Peter J. Park"
 journal: "Genome Biology"
 volume: 21
 year: 2020
