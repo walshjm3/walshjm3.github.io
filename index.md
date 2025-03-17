@@ -11,7 +11,7 @@ title: Home
 
 ## Working Papers
 
-{% assign sorted_works = site.working | sort: 'id' %}
+{% assign sorted_works = site.working | sort: 'id' | reverse %}
 {% for paper in sorted_works %}
 <!-- Paper title line with numbering -->
 <p>
@@ -21,14 +21,11 @@ title: Home
       {{ paper.title }}
     </a>
   </strong>.
-  {% if paper.journal %}
-    <em> {{ paper.journal }}</em>
+  {% if paper.link %}
+    <span> [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]</span>
   {% endif %}
   {% if paper.authors %}
-    <span> (with {{ paper.authors }})</span>
-  {% endif %}
-  {% if paper.link %}
-    <span> (<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Link</a>)</span>
+    <span> with {{ paper.authors }}</span>
   {% endif %}
 </p>
 
@@ -55,24 +52,24 @@ title: Home
 
 ## Publications
 
-{% assign sorted_pubs = site.publications | sort: 'id' %}
+{% assign sorted_pubs = site.publications | sort: 'id' | reverse %}
 {% for paper in sorted_pubs %}
 <!-- Paper title line with numbering -->
 <p>
   <span>{{ forloop.index }}. </span>
   <strong>
-    <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
+    <a href="{{ paper.link }}" target="_blank" rel="noopener">
       {{ paper.title }}
     </a>
   </strong>.
-  {% if paper.journal %}
-    <em> {{ paper.journal }}</em>
-  {% endif %}
   {% if paper.authors %}
     <span> (with {{ paper.authors }})</span>
   {% endif %}
+  {% if paper.journal %}
+    <em> {{ paper.journal }}</em>,<em> {{paper.year}}
+  {% endif %}
   {% if paper.link %}
-    <span> (<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Link</a>)</span>
+    <span> [<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Publication</a>]</span>
   {% endif %}
 </p>
 {% endfor %}
