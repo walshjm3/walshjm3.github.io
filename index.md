@@ -17,9 +17,9 @@ title: Home
   <li>
     <strong>
       <a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-title">
-        {{ paper.title }}
+        {{ paper.title }}.
       </a>
-    </strong>.
+    </strong>
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
     {% endif %}
@@ -53,10 +53,10 @@ title: Home
   {% for paper in sorted_pubs %}
   <li>
     <strong>
-      <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
-        {{ paper.title }}
+      <a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-title">
+        {{ paper.title }}.
       </a>
-    </strong>.
+    </strong>
     <br>
     {% if paper.authors %}
       with {{ paper.authors }}
@@ -66,7 +66,6 @@ title: Home
       <em>{{ paper.journal }}</em>, <em>{{ paper.year }}</em>
     {% endif %}
     <br>
-    (<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Link</a>)
   </li>
   {% endfor %}
 </ol>
