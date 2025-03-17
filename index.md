@@ -8,77 +8,80 @@ title: Home
 <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> and a research assistant at the <a href="https://www.nber.org/" rel="external nofollow noopener" target="_blank">National Bureau of Economic Research</a> for Professor Claudia Goldin. Before economics, I did research in computational biology.</p>
 
 <p>My research studies agency frictions and their impacts on financial markets, using tools from public finance, industrial organization, and econometrics.</p>
-
 ## Working Papers
 
 {% for paper in site.working %}
-<!-- Title + toggle arrow -->
+<!-- Paper title line -->
+<p>
+  <strong>
+    <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
+      {{ paper.title }}
+    </a>
+  </strong>
+  {% if paper.journal %}
+    <em> – {{ paper.journal }}</em>
+  {% endif %}
+  {% if paper.authors %}
+    <span> (with {{ paper.authors }})</span>
+  {% endif %}
+</p>
+
+<!-- Toggle for Abstract -->
 <p>
   <a 
-    class="toggle-link collapsed d-inline-flex align-items-center" 
-    style="color: black; text-decoration: none;"
+    class="d-inline-flex align-items-center collapsed" 
+    style="color: black; text-decoration: none; cursor: pointer;"
     data-toggle="collapse"
     href="#{{ paper.id }}"
     role="button"
     aria-expanded="false"
     aria-controls="{{ paper.id }}"
   >
-    <!-- Arrow icon (points right by default) -->
-    <i class="fas fa-caret-right mr-2"></i>
-    <!-- Paper title -->
-    <strong>{{ paper.title }}</strong>
-    {% if paper.authors %}
-      <span class="ml-2">{{ paper.authors }}</span>
-    {% endif %}
+    Abstract <i class="fas fa-caret-right ml-1"></i>
   </a>
 </p>
 
 <!-- Collapsible abstract section -->
-<div class="collapse ml-4" id="{{ paper.id }}">
+<div class="collapse ml-4 mb-3" id="{{ paper.id }}">
   <p>{{ paper.abstract }}</p>
-  {% if paper.link %}
-    <p>
-      <a href="{{ paper.link }}" target="_blank" rel="noopener">
-        Read Online
-      </a>
-    </p>
-  {% endif %}
 </div>
 {% endfor %}
 
 ## Publications
 
 {% for paper in site.publications %}
-<!-- Title + toggle arrow -->
+<!-- Paper title line -->
+<p>
+  <strong>
+    <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
+      {{ paper.title }}
+    </a>
+  </strong>
+  {% if paper.journal %}
+    <em> – {{ paper.journal }}</em>
+  {% endif %}
+  {% if paper.authors %}
+    <span> (with {{ paper.authors }})</span>
+  {% endif %}
+</p>
+
+<!-- Toggle for Abstract -->
 <p>
   <a 
-    class="toggle-link collapsed d-inline-flex align-items-center" 
-    style="color: black; text-decoration: none;"
+    class="d-inline-flex align-items-center collapsed" 
+    style="color: black; text-decoration: none; cursor: pointer;"
     data-toggle="collapse"
     href="#{{ paper.id }}"
     role="button"
     aria-expanded="false"
     aria-controls="{{ paper.id }}"
   >
-    <!-- Arrow icon (points right by default) -->
-    <i class="fas fa-caret-right mr-2"></i>
-    <!-- Paper title -->
-    <strong>{{ paper.title }}</strong>
-    {% if paper.authors %}
-      <span class="ml-2">{{ paper.authors }}</span>
-    {% endif %}
+    Abstract <i class="fas fa-caret-right ml-1"></i>
   </a>
 </p>
 
 <!-- Collapsible abstract section -->
-<div class="collapse ml-4" id="{{ paper.id }}">
+<div class="collapse ml-4 mb-3" id="{{ paper.id }}">
   <p>{{ paper.abstract }}</p>
-  {% if paper.link %}
-    <p>
-      <a href="{{ paper.link }}" target="_blank" rel="noopener">
-        Read Online
-      </a>
-    </p>
-  {% endif %}
 </div>
 {% endfor %}
