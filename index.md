@@ -8,9 +8,11 @@ title: Home
 <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> and a research assistant at the <a href="https://www.nber.org/" rel="external nofollow noopener" target="_blank">National Bureau of Economic Research</a> for Professor Claudia Goldin. Before economics, I did research in computational biology.</p>
 
 <p>My research studies agency frictions and their impacts on financial markets, using tools from public finance, industrial organization, and econometrics.</p>
+
 ## Working Papers
 
-{% for paper in site.working %}
+{% assign sorted_works = site.working | sort: 'year' | reverse %}
+{% for paper in sorted_works %}
 <!-- Paper title line -->
 <p>
   <strong>
@@ -24,6 +26,13 @@ title: Home
   {% if paper.authors %}
     <span> (with {{ paper.authors }})</span>
   {% endif %}
+  {% if paper.year %}
+    <span> – {{ paper.year }}</span>
+  {% endif %}
+</p>
+
+<!-- Toggle for Abstract -->
+<p>
   <a 
     class="d-inline-flex align-items-center collapsed" 
     style="color: black; text-decoration: none; cursor: pointer;"
@@ -45,7 +54,8 @@ title: Home
 
 ## Publications
 
-{% for paper in site.publications %}
+{% assign sorted_pubs = site.publications | sort: 'year' | reverse %}
+{% for paper in sorted_pubs %}
 <!-- Paper title line -->
 <p>
   <strong>
@@ -59,4 +69,9 @@ title: Home
   {% if paper.authors %}
     <span> (with {{ paper.authors }})</span>
   {% endif %}
+  {% if paper.year %}
+    <span> – {{ paper.year }}</span>
+  {% endif %}
 </p>
+
+{% endfor %}

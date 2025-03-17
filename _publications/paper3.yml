@@ -3,9 +3,9 @@ id: 4
 title: "High-resolution spectroscopic study of extremely metal-poor star candidates from the SkyMapper survey"
 authors: "Heather R. Jacobson, Anna Frebel, José M. Peña, Qinsi Yu, Stefan Keller, Martin Asplund, Michael S. Bessell, Gary S. Da Costa, Anna F. Marino, John E. Norris, Brian P. Schmidt, Patrick Tisserand, David Yong, Andrew R. Casey, and Karin Lind"
 journal: "The Astrophysical Journal"
-volume: "807"
-issue: "2"
-pages: "171"
+volume: 807
+issue: 2
+pages: 171
 year: "2015"
 abstract: "The SkyMapper Southern Sky Survey is carrying out a search for the most metal-poor stars in the Galaxy. It identifies candidates by way of its unique filter set which allows for estimation of stellar atmospheric parameters. The set includes a narrow filter centered on the Ca ii K 3933 Å line, enabling a robust estimate of stellar metallicity. Promising candidates are then confirmed with spectroscopy. We present the analysis of Magellan Inamori Kyocera Echelle high-resolution spectroscopy of 122 metal-poor stars found by SkyMapper in the first two years of commissioning observations. Forty-one stars have [Fe/H]⩽−3.0. Nine have [Fe/H]⩽−3.5, with three at [Fe/H]∼−4. A 1D LTE abundance analysis of the elements Li, C, Na, Mg, Al, Si, Ca, Sc, Ti, Cr, Mn, Co, Ni, Zn, Sr, Ba, and Eu shows these stars have [X/Fe] ratios typical of other halo stars. One star with low [X/Fe] values appears to be “Fe-enhanced,” while another star has an extremely large [Sr/Ba] ratio: \textgreater2. Only one other star is known to have a comparable value. Seven stars are “CEMP-no” stars ([C/Fe]\textgreater0.7, [Ba/Fe]\textless0). 21 stars exhibit mild r-process element enhancements (0.3⩽[Eu/Fe]\textless1.0), while four stars have [Eu/Fe]⩾1.0. These results demonstrate the ability to identify extremely metal-poor stars from SkyMapper photometry, pointing to increased sample sizes and a better characterization of the metal-poor tail of the halo metallicity distribution function in the future."
 link: "https://iopscience.iop.org/article/10.1088/0004-637X/807/2/171/meta"
