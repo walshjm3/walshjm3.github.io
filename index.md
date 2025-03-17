@@ -8,17 +8,17 @@ title: Home
 <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> and a research assistant at the <a href="https://www.nber.org/" rel="external nofollow noopener" target="_blank">National Bureau of Economic Research</a> for Professor Claudia Goldin. Before economics, I did research in computational biology.</p>
 
 <p>My research studies agency frictions and their impacts on financial markets, using tools from public finance, industrial organization, and econometrics.</p>
+
 ## Working Papers
 
 <ol class="paper-list">
-  {% assign sorted_works = site.working | sort: 'id' | reverse %}
   {% for paper in sorted_works %}
   <li>
     <strong>
-      <a href="{{ paper.link }}" target="_blank" rel="noopener" style="color: black; text-decoration: none;">
+      <a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-title">
         {{ paper.title }}
       </a>
-    </strong>
+    </strong>.
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
     {% endif %}
@@ -44,6 +44,7 @@ title: Home
   </li>
   {% endfor %}
 </ol>
+
 
 ## Publications
 
