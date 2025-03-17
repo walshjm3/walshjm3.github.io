@@ -25,7 +25,7 @@ site.data.papers = [
 ]
 {% endcomment %}
 
-{% for paper in site.data.papers %}
+{% for paper in site.publications %}
 <div class="my-3">
   <!-- Toggle Link -->
   <a 
