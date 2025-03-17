@@ -1,7 +1,8 @@
 ---
-id: 1
-title: "Margin or Mission? The Effects of CEOs on Hospital Outcomes"
-authors: "Nagisa Tadjfar"
-abstract: "This paper provides suggestive evidence from US hospitals that hospital CEOs tend to systematically increase or decrease charity care and other financial outcomes across the different hospitals. Using the large mobility of hospital CEOs in the US between 1996-2019, we classify CEOs into quartile cells based on percent changes in charity care and margins they are associated with across their hospitals of employment. For each hospital-CEO pair, we construct leave-one- out quartile cells to classify CEOs based on changes they are associated with at other hospitals for each outcome. Within 3 years of the appointment of a “top quartile” CEO who is associated with increased charity care at other hospitals, the share of expenses devoted to charity care increases by 40%-90% relative to hospitals who hire first, second, or third quartile CEOs. We also find large and significant effects on outcomes such as total margin, gross revenue, and occupancy. Hospitals appointing CEOs with “top quartile” and “bottom quartile” effects on charity care and margins are not on differential trends and are observationally similar."
-#link: "https://example.com/paper1.pdf"
+id: 2
+title: "How do nonprofits use cash windfalls? Evidence from $5B in unrestricted donations"
+authors:
+abstract: "How do nonprofits use unrestricted gifts? Donations to 501(c)(3)’s are increasingly given unrestricted due to concerns that restrictions on use unduly constrain nonprofits. I study the effect of such funding on recipients using a $5B sample of MacKenzie Scott’s gifts from 2019-2022 to 567 nonprofits. I find that, within two years of receiving the gift, nonprofits received 64% of the average gift in additional contributions and spent the entirety of the average gift compared to similar untreated nonprofits. After giving away 26% as grants to individuals and other nonprofits, recipients spent these funds proportionally to their previous activities. Two years after the gift, CEO compensation increased by $20.9K (9%), average director compensation increased by $12K (12.1%), and average compensation of non-senior employees increased by $2.7K (5.8%) compared to similar untreated nonprofits. For every dollar of unrestricted gift and additional contributions, the present value of executive compensation increased by $0.23. Recipient nonprofits do not become less constrained in allocating their revenue to indirect costs or savings. In sum, nonprofits that receive this set of unrestricted gifts do not behave in the hypothesized liquidity-constrained manner."
+link: "/assets/nonprofit_windfalls_walsh_2025.pdf"
+ssrn: "https://papers.ssrn.com/abstract=5181093"
 ---
