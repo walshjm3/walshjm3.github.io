@@ -19,3 +19,13 @@ d-appendix a:hover,d-appendix a.footnote-backlink:hover{color:var(--global-hover
         margin-bottom: 3em;
         line-height: 1.4;
       }
+      a.collapsed i.fas.fa-caret-right {
+        transform: rotate(0deg);
+        transition: transform 0.2s ease;
+      }
+      
+      a:not(.collapsed) i.fas.fa-caret-right {
+        transform: rotate(90deg);
+        transition: transform 0.2s ease;
+      }
+      
