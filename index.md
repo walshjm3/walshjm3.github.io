@@ -9,5 +9,6 @@ title: Home
  <h3 id="working-papers">Working Papers</h3> 
  
  <p><strong>How Do Nonprofits Use Cash Windfalls? Evidence from $5B in Unrestricted Donations</strong></p> 
+ Abstract here
  
  <p><strong>Margin or Mission? The Effects of CEOs on Hospital Outcomes</strong>, with Nagisa Tadjfar</p>
