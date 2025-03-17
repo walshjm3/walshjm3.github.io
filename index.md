@@ -11,29 +11,48 @@ title: Home
 
 ## Working Papers
 
-{% for paper in site.publications %}
-<p>
-  <a class="btn btn-link"
-     data-toggle="collapse"
-     href="#{{ paper.id }}"
-     role="button"
-     aria-expanded="false"
-     aria-controls="{{ paper.id }}">
+{% comment %}
+Loop over your papers array in _data/papers.yml:
+site.data.papers = [
+  {
+    "id": "paper1",
+    "title": "How Do Nonprofits Use Cash Windfalls?",
+    "coauthors": "with Some Coauthor",
+    "abstract": "Abstract text here...",
+    "link": "https://example.com/paper1.pdf"
+  },
+  {...}
+]
+{% endcomment %}
+
+{% for paper in site.data.papers %}
+<div class="my-3">
+  <!-- Toggle Link -->
+  <a 
+    class="d-inline-flex align-items-center collapsed" 
+    style="text-transform: none; text-decoration: underline;" 
+    data-toggle="collapse"
+    href="#{{ paper.id }}"
+    role="button"
+    aria-expanded="false"
+    aria-controls="{{ paper.id }}"
+  >
     <strong>{{ paper.title }}</strong>
     {% if paper.coauthors %}
-      <em>, {{ paper.coauthors }}</em>
+      <span class="ml-2"><em>{{ paper.coauthors }}</em></span>
     {% endif %}
+    <!-- Toggle arrow icon -->
+    <i class="fas fa-chevron-down ml-2"></i>
   </a>
-</p>
 
-<div class="collapse" id="{{ paper.id }}">
-  <p>{{ paper.abstract }}</p>
-  {% if paper.link %}
-    <p>
-      <a href="{{ paper.link }}" target="_blank" rel="noopener">
-        Read Online
-      </a>
-    </p>
-  {% endif %}
+  <!-- Collapsible Abstract & Link -->
+  <div class="collapse mt-2" id="{{ paper.id }}">
+    <p>{{ paper.abstract }}</p>
+    {% if paper.link %}
+      <p>
+        <a href="{{ paper.link }}" target="_blank" rel="noopener">Read Online</a>
+      </p>
+    {% endif %}
+  </div>
 </div>
 {% endfor %}
