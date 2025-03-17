@@ -4,7 +4,5 @@ description: "This is my first Jekyll site"
 collections:
   publications:
     output: true
-
-collections:
   working:
     output: true
