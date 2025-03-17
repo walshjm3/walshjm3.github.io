@@ -1,0 +1,13 @@
+ ---
+layout: default
+title: Home
+---
+
+<p>I am a Ph.D. student in Business Economics at Harvard, where I am supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a> and <a href="https://opportunityinsights.org/" rel="external nofollow noopener" target="_blank">Opportunity Insights</a>.</p> <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> and a research assistant at the <a href="https://www.nber.org/" rel="external nofollow noopener" target="_blank">National Bureau of Economic Research</a> for Professor Claudia Goldin. Before economics, I did research in computational biology.</p> <p>My research studies agency frictions and their impacts on financial markets, using tools from public finance, industrial organization, and econometrics.</p>
+
+
+ <h3 id="working-papers">Working Papers</h3> 
+ 
+ <p><strong>How Do Nonprofits Use Cash Windfalls? Evidence from $5B in Unrestricted Donations</strong></p> 
+ 
+ <p><strong>Margin or Mission? The Effects of CEOs on Hospital Outcomes</strong>, with Nagisa Tadjfar</p>
