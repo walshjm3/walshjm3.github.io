@@ -11,21 +11,7 @@ d-appendix h3,d-appendix li,d-appendix span{color:var(--global-distill-app-color
     a.paper-link:hover {
         text-decoration: underline;
     }  
-    .paper-list {
-        list-style-type: decimal;
-        margin-left: 2em;  /* Increase left margin for extra spacing */
-        padding-left: 0.5em;
-      }
-      
       .paper-list li {
         margin-bottom: 3em;
         line-height: 1.4;
       }
-      
-      /* Style the list numbers (markers) to be blue and bigger */
-      .paper-list li::marker {
-        color: blue;
-        font-size: 1.2em;
-        padding-right: 1em;
-      }
-      

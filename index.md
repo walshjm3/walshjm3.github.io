@@ -12,7 +12,7 @@ title: Home
 ## Working Papers
 
 <ol class="paper-list">
- {% assign sorted_works = site.working | sort: 'id' | reverse %}
+ {% assign sorted_works = site.working | sort: 'id' %}
   {% for paper in sorted_works %}
   <li>
     <strong>
@@ -23,8 +23,8 @@ title: Home
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
     {% endif %}
-    <br>
     {% if paper.authors %}
+    <br>
       with {{ paper.authors }}
     {% endif %}
     <br>
@@ -57,8 +57,8 @@ title: Home
         {{ paper.title }}.
       </a>
     </strong>
-    <br>
     {% if paper.authors %}
+     <br>
       with {{ paper.authors }}
     {% endif %}
     <br>
