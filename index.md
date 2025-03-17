@@ -29,6 +29,7 @@ title: Home
     <br>
       with {{ paper.authors }}
     {% endif %}
+    {% if paper.abstract %}
     <br>
     <a 
        class="d-inline-flex align-items-center collapsed" 
@@ -44,6 +45,7 @@ title: Home
     <div class="collapse ml-4 mb-3" id="collapse-{{ paper.id | remove: '/working/' }}">
       <p>{{ paper.abstract }}</p>
     </div>
+    {% endif %}
   </li>
   {% endfor %}
 </ol>
