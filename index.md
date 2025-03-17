@@ -59,17 +59,14 @@ title: Home
   <span>{{ forloop.index }}. </span>
   <strong>
     <a href="{{ paper.link }}" target="_blank" rel="noopener">
-      {{ paper.title }}
+      {{ paper.title }}.
     </a>
-  </strong>.
+  </strong>
   {% if paper.authors %}
-    <span> (with {{ paper.authors }})</span>
+    <span> with {{ paper.authors }}</span>
   {% endif %}
   {% if paper.journal %}
-    <em> {{ paper.journal }}</em>,<em> {{paper.year}}
-  {% endif %}
-  {% if paper.link %}
-    <span> [<a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-link">Publication</a>]</span>
+    <em> {{ paper.journal }}</em>,<em> {{paper.year}}</em>
   {% endif %}
 </p>
 {% endfor %}
