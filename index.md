@@ -11,7 +11,7 @@ title: Home
 
 ## Working Papers
 
-{% for paper in site.data.papers %}
+{% for paper in site.publications.papers %}
 <p>
   <a class="btn btn-link"
      data-toggle="collapse"
