@@ -32,10 +32,10 @@ title: Home
        class="d-inline-flex align-items-center collapsed" 
        style="color: black; text-decoration: none; cursor: pointer;"
        data-toggle="collapse"
-       href="#collapse-{{ paper.id }}"
+       href="#collapse-{{ paper.id | slugify }}"
        role="button"
        aria-expanded="false"
-       aria-controls="collapse-{{ paper.id }}"
+       aria-controls="collapse-{{ paper.id | slugify }}"
     >
       <i class="fas fa-caret-right mr-1"></i> Abstract
     </a>
