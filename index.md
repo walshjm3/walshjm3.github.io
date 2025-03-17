@@ -26,35 +26,36 @@ site.data.papers = [
 {% endcomment %}
 
 {% for paper in site.publications %}
-<div class="card my-3">
-  <div class="card-header" style="background-color: #f8f9fa;">
-    <!-- Toggle button (or link) -->
-    <a class="d-block" 
-       data-toggle="collapse" 
-       href="#{{ paper.id }}" 
-       role="button" 
-       aria-expanded="false" 
-       aria-controls="{{ paper.id }}"
-       style="text-decoration: none;"
-    >
-      <strong>{{ paper.title }}</strong>
-      {% if paper.authors %}
-        <span class="text-muted"> – {{ paper.authors }}</span>
-      {% endif %}
-      <!-- Optional toggle arrow -->
-      <i class="fas fa-chevron-down float-right mt-1"></i>
-    </a>
-  </div>
-  
-  <div id="{{ paper.id }}" class="collapse">
-    <div class="card-body">
-      <p>{{ paper.abstract }}</p>
-      {% if paper.link %}
-        <p>
-          <a href="{{ paper.link }}" target="_blank" rel="noopener">Read Online</a>
-        </p>
-      {% endif %}
-    </div>
-  </div>
+<!-- Title + toggle arrow -->
+<p>
+  <a 
+    class="toggle-link collapsed d-inline-flex align-items-center" 
+    style="color: black; text-decoration: none;"
+    data-toggle="collapse"
+    href="#{{ paper.id }}"
+    role="button"
+    aria-expanded="false"
+    aria-controls="{{ paper.id }}"
+  >
+    <!-- Arrow icon (points right by default) -->
+    <i class="fas fa-caret-right mr-2"></i>
+    <!-- Paper title -->
+    <strong>{{ paper.title }}</strong>
+    {% if paper.authors %}
+      <span class="ml-2">{{ paper.authors }}</span>
+    {% endif %}
+  </a>
+</p>
+
+<!-- Collapsible abstract section -->
+<div class="collapse ml-4" id="{{ paper.id }}">
+  <p>{{ paper.abstract }}</p>
+  {% if paper.link %}
+    <p>
+      <a href="{{ paper.link }}" target="_blank" rel="noopener">
+        Read Online
+      </a>
+    </p>
+  {% endif %}
 </div>
 {% endfor %}
