@@ -25,6 +25,9 @@ title: Home
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
     {% endif %}
+    {% if paper.info %}
+      {{ paper.info }}
+    {% endif %}
     {% if paper.authors %}
     <br>
       with {{ paper.authors }}
