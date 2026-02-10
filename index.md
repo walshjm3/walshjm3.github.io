@@ -9,7 +9,7 @@ title: Home
 <p>I study corporate governance using tools from industrial organization, financial economics, and public economics.</p>
 
 
-<p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> before that, did research in computational biology.</p>
+<p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a>. Before that, I did research in computational biology.</p>
 
 ## Working Papers
 
