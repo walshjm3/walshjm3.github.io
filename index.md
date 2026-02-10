@@ -3,13 +3,13 @@ layout: default
 title: Home
 ---
 
-<p>I am a Ph.D. student in Business Economics at Harvard, where I was supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a>.</p>
+<p>I am a Ph.D. student in Business Economics at Harvard, where I was supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a> and am affiliated with the Center for American Political Studies.</p>
 
 
-<p>My research studies how firms interact with external stakeholders, using tools from industrial organization, corporate finance, and public economics.</p>
+<p>I study corporate governance using tools from industrial organization, financial economics, and public economics.</p>
 
 
-<p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> and a research assistant for Professor Claudia Goldin. Before economics, I did research in computational biology.</p>
+<p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a> before that, did research in computational biology.</p>
 
 ## Working Papers
 
