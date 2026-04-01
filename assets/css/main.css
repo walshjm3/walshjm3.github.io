@@ -32,7 +32,11 @@ d-appendix a:hover,d-appendix a.footnote-backlink:hover{color:var(--global-hover
       .paper-year {
         font-size: 0.8rem;
         color: var(--global-text-color-light);
-        margin-left: 0.4rem;
+      }
+
+      .paper-info {
+        font-size: 0.85rem;
+        color: var(--global-text-color-light);
       }
 
       .paper-badge {
@@ -40,11 +44,11 @@ d-appendix a:hover,d-appendix a.footnote-backlink:hover{color:var(--global-hover
         font-size: 0.7rem;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.04em;
-        color: var(--global-theme-color);
-        border: 1px solid var(--global-theme-color);
+        letter-spacing: 0.05em;
+        color: #fff;
+        background-color: #2c6fad;
         border-radius: 3px;
-        padding: 1px 6px;
-        margin-left: 0.4rem;
+        padding: 2px 7px;
+        margin-right: 0.4rem;
         vertical-align: middle;
       }

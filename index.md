@@ -22,17 +22,18 @@ title: Home
         {{ paper.title }}.
       </a>
     </strong>
-    {% if paper.year %}<span class="paper-year">{{ paper.year }}</span>{% endif %}
-    {% if paper.badge %}<span class="paper-badge">{{ paper.badge }}</span>{% endif %}
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
-    {% endif %}
-    {% if paper.info %}
-      {{ paper.info }}
     {% endif %}
     {% if paper.authors %}
     <br>
       with {{ paper.authors }}
+    {% endif %}
+    {% if paper.badge or paper.year or paper.info %}
+    <br>
+    {% if paper.badge %}<span class="paper-badge">{{ paper.badge }}</span>{% endif %}
+    {% if paper.year %}<span class="paper-year">{{ paper.year }}</span>{% endif %}
+    {% if paper.info %}<span class="paper-info">{{ paper.info }}</span>{% endif %}
     {% endif %}
     {% if paper.abstract %}
     <br>
