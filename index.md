@@ -29,9 +29,12 @@ title: Home
     <br>
       with {{ paper.authors }}
     {% endif %}
-    {% if paper.badge or paper.badge_date or paper.year or paper.info %}
+    {% if paper.info %}
+      <span class="paper-info{% if paper.info_blue %} paper-info--blue{% endif %}">{{ paper.info }}</span>
+    {% endif %}
+    {% if paper.badge or paper.badge_date or paper.year %}
     <br>
-    <span class="paper-badge">{% if paper.badge %}{{ paper.badge }}{% if paper.badge_date %} · {% endif %}{% endif %}{% if paper.badge_date %}<strong>{{ paper.badge_date }}</strong>{% endif %}{% if paper.year %} {{ paper.year }}{% endif %}</span>{% if paper.info %}<span class="paper-info"> {{ paper.info }}</span>{% endif %}
+    <span class="paper-badge">{% if paper.badge %}{{ paper.badge }}{% if paper.badge_date %} · {% endif %}{% endif %}{% if paper.badge_date %}<strong>{{ paper.badge_date }}</strong>{% endif %}{% if paper.year %} {{ paper.year }}{% endif %}</span>
     {% endif %}
     {% if paper.abstract %}
     <br>
