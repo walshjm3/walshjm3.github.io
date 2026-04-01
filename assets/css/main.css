@@ -16,7 +16,7 @@ d-appendix a:hover,d-appendix a.footnote-backlink:hover{color:var(--global-hover
         text-decoration: underline;
     }  
       .paper-list li {
-        margin-bottom: 3em;
+        margin-bottom: 1.5em;
         line-height: 1.4;
       }
       a.collapsed i.fas.fa-caret-right {
