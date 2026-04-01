@@ -22,6 +22,8 @@ title: Home
         {{ paper.title }}.
       </a>
     </strong>
+    {% if paper.year %}<span class="paper-year">{{ paper.year }}</span>{% endif %}
+    {% if paper.badge %}<span class="paper-badge">{{ paper.badge }}</span>{% endif %}
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
     {% endif %}
