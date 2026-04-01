@@ -29,26 +29,19 @@ d-appendix a:hover,d-appendix a.footnote-backlink:hover{color:var(--global-hover
         transition: transform 0.2s ease;
       }
 
-      .paper-year {
-        font-size: 0.8rem;
-        color: var(--global-text-color-light);
-      }
-
       .paper-info {
         font-size: 0.85rem;
-        color: var(--global-text-color-light);
+        color: var(--global-text-color-light) !important;
       }
 
       .paper-badge {
-        display: inline-block;
-        font-size: 0.7rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #fff;
-        background-color: #2c6fad;
-        border-radius: 3px;
-        padding: 2px 7px;
-        margin-right: 0.4rem;
-        vertical-align: middle;
+        font-size: 0.82rem;
+        font-style: italic;
+        color: var(--global-theme-color) !important;
+      }
+
+      .paper-badge strong {
+        font-style: normal;
+        font-weight: 700;
+        color: var(--global-theme-color) !important;
       }
