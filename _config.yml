@@ -3,6 +3,6 @@ description: "This is my first Jekyll site"
 
 collections:
   publications:
-    output: true
+    output: false
   working:
-    output: true
+    output: false
