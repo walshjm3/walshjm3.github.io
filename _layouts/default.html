@@ -79,9 +79,11 @@
 
     <link rel="canonical" href="https://www.jennifer-walsh.com/">
 
-    <!-- Theme & Dark Mode JS (safe to load in head if it's doing theme detection) -->
-    <script src="/assets/js/theme.js?96d6b3e1c3604aca8b6134c7afdd5db6"></script>
-    <script src="/assets/js/dark_mode.js?9b17307bb950ffa2e34be0227f53558f"></script>
+    <!-- Force light mode: clear any persisted dark-mode preference -->
+    <script>
+      try { localStorage.removeItem("theme"); } catch (e) {}
+      document.documentElement.removeAttribute("data-theme");
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E5EF4NK4H"></script>
@@ -129,12 +131,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/assets/jenniferwalsh_online.pdf">cv</a>
-              </li>
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
               </li>
             </ul>
           </div>
