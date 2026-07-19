@@ -6,7 +6,7 @@ title: Home
 <p>I am a Ph.D. student in Business Economics at Harvard, where I was supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a> and am affiliated with the <a href="https://caps.gov.harvard.edu/" rel="external nofollow noopener" target="_blank">Center for American Political Studies</a>.</p>
 
 
-<p>I study financial regulation and corporate governance using tools from industrial organization.</p>
+<p><b>I am on the 2026-2027 job market.</b></p>
 
 
 <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a>.</p>
