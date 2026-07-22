@@ -15,7 +15,8 @@ title: Home
 
 <ol class="paper-list">
   <li>
-    <strong><span class="paper-title">Mergers with Regulated Capital.</span></strong>
+    <strong><span class="paper-title" style="color: var(--global-theme-color);">Mergers with Regulated Capital.</span></strong>
+    <span class="paper-info">[Draft coming soon!]</span>
     <br>
     with Nathan Kaplan
   </li>
