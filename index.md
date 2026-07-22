@@ -13,7 +13,7 @@ title: Home
 
 ## Job Market Paper
 
-<ol class="paper-list">
+<ol class="paper-list" style="list-style: none;">
   <li>
     <strong><span class="paper-title" style="color: var(--global-theme-color);">Mergers with Regulated Capital.</span></strong>
     <span class="paper-info">[Draft coming soon!]</span>
