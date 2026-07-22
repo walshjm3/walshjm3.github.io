@@ -11,6 +11,16 @@ title: Home
 
 <p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a>.</p>
 
+## Job Market Paper
+
+<ol class="paper-list">
+  <li>
+    <strong><span class="paper-title">Mergers with Regulated Capital.</span></strong>
+    <br>
+    with Nathan Kaplan
+  </li>
+</ol>
+
 ## Working Papers
 
 <ol class="paper-list">
