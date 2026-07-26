@@ -3,8 +3,8 @@ id: 3
 title: "How Do Nonprofits Use Cash Windfalls? Evidence from $5B in Unrestricted Donations"
 authors:
 badge: "Revised"
-badge_date: "March 2026"
-abstract: "Most large donations to 501(c)(3)'s are given with restrictions on use. Whether restrictions fuel a ''nonprofit starvation cycle'' that reduces charitable productivity remains an open question. To test this hypothesis, I develop a corporate-finance model of nonprofits and exploit $5B of MacKenzie Scott's unrestricted gifts as a natural experiment. Comparing 642 recipients to matched nonrecipients with difference-in-differences, I find recipients attracted additional donations, spent the entire gift within two years, and disbursed 3% of new spending as executive compensation. The results are consistent with use-restrictions constraining executive pay and cast doubt on the starvation cycle hypothesis."
+badge_date: "July 2026"
+abstract: "I use $5B of MacKenzie Scott's unrestricted gifts as a natural experiment to test the hypothesis of a “nonprofit starvation cycle” caused by donation use-restrictions. Comparing 643 recipients to similar nonrecipients with difference-in-differences, I find that recipients attracted additional donations, spent the entire gift within two years, and disbursed 20% of new spending as grants to others and 3% as executive compensation. In present value, $0.18 per dollar of the windfall was spent on executive pay. With a corporate-finance model of nonprofits maximizing charitable output subject to donation use-restrictions, the evidence casts doubt on the starvation cycle hypothesis."
 link: "/assets/nonprofit_windfalls.pdf"
 ssrn: "https://papers.ssrn.com/abstract=5181093"
 ---
