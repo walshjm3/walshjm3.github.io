@@ -25,7 +25,7 @@ title: Home
 ## Working Papers
 
 <ol class="paper-list">
- {% assign sorted_works = site.working | sort: 'id' | reverse %}
+ {% assign sorted_works = site.working | sort: 'id' %}
   {% for paper in sorted_works %}
   <li>
     <strong>
