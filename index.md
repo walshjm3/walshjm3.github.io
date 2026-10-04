@@ -46,17 +46,14 @@ title: Home
     {% if paper.abstract %}
     <br>
     <a 
-       class="d-inline-flex align-items-center collapsed" 
-       style="color: black; text-decoration: none; cursor: pointer;"
+       class="abstract-toggle d-inline-flex align-items-center collapsed"
        data-toggle="collapse"
        href="#collapse-{{ paper.id | remove: '/working/' }}"
        role="button"
        aria-expanded="false"
        aria-controls="collapse-{{ paper.id | remove: '/working/' }}"
-    >
-      <i class="fas fa-caret-right mr-1"></i> Abstract
-    </a>
-    <div class="collapse ml-4 mb-3" id="collapse-{{ paper.id | remove: '/working/' }}">
+    >Abstract</a>
+    <div class="abstract-text collapse ml-4 mb-3" id="collapse-{{ paper.id | remove: '/working/' }}">
       <p>{{ paper.abstract }}</p>
     </div>
     {% endif %}
