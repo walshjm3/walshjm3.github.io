@@ -40,7 +40,6 @@ title: Home
       <span class="paper-info{% if paper.info_blue %} paper-info--blue{% endif %}">{{ paper.info }}</span>
     {% endif %}
     {% if paper.badge or paper.badge_date or paper.year %}
-    <br>
     <span class="paper-badge">{% if paper.badge %}{{ paper.badge }}{% if paper.badge_date %} · {% endif %}{% endif %}{% if paper.badge_date %}<strong>{{ paper.badge_date }}</strong>{% endif %}{% if paper.year %} {{ paper.year }}{% endif %}</span>
     {% endif %}
     {% if paper.abstract %}
@@ -52,7 +51,7 @@ title: Home
        role="button"
        aria-expanded="false"
        aria-controls="collapse-{{ paper.id | remove: '/working/' }}"
-    >Abstract</a>
+    ><i class="fas fa-caret-right"></i> Abstract</a>
     <div class="abstract-text collapse ml-4 mb-3" id="collapse-{{ paper.id | remove: '/working/' }}">
       <p>{{ paper.abstract }}</p>
     </div>
