@@ -15,10 +15,9 @@ title: Home
 
 <ol class="paper-list" style="list-style: none;">
   <li>
-    <strong><span class="paper-title">Capital Regulation as a Barrier to Bank Consolidation.</span></strong>
+    <strong><span class="paper-title">Capital Regulation as a Barrier to Bank Consolidation</span></strong>
+    (with Nathan Kaplan)
     <span class="paper-info">[Draft coming soon!]</span>
-    <br>
-    with Nathan Kaplan
   </li>
 </ol>
 
@@ -30,21 +29,18 @@ title: Home
   <li>
     <strong>
       <a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-title">
-        {{ paper.title }}.
-      </a>
-    </strong>
+        {{ paper.title }}</a></strong>
+    {% if paper.authors %}
+      (with {{ paper.authors }})
+    {% endif %}
     {% if paper.ssrn %}
       [<a href="{{ paper.ssrn }}" target="_blank" rel="noopener" class="paper-link">SSRN</a>]
-    {% endif %}
-    {% if paper.authors %}
-    <br>
-      with {{ paper.authors }}
     {% endif %}
     {% if paper.info %}
       <span class="paper-info{% if paper.info_blue %} paper-info--blue{% endif %}">{{ paper.info }}</span>
     {% endif %}
     {% if paper.badge or paper.badge_date or paper.year %}
-    {% unless paper.authors %}<br>{% endunless %}
+    <br>
     <span class="paper-badge">{% if paper.badge %}{{ paper.badge }}{% if paper.badge_date %} · {% endif %}{% endif %}{% if paper.badge_date %}<strong>{{ paper.badge_date }}</strong>{% endif %}{% if paper.year %} {{ paper.year }}{% endif %}</span>
     {% endif %}
     {% if paper.abstract %}
@@ -76,16 +72,18 @@ title: Home
   <li>
     <strong>
       <a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-title">
-        {{ paper.title }}.
-      </a>
-    </strong>
+        {{ paper.title }}</a></strong>
     {% if paper.authors %}
-     <br>
-      with {{ paper.authors }}
+      {% assign author_list = paper.authors | split: ", " %}
+      {% if author_list.size > 20 %}
+        (with {{ author_list[0] }} et al.)
+      {% else %}
+        (with {{ paper.authors }})
+      {% endif %}
     {% endif %}
     <br>
     {% if paper.journal %}
-      <em>{{ paper.journal }}</em>{% if paper.volume %}, {{ paper.volume }}{% if paper.issue %}({{ paper.issue }}){% endif %}{% endif %}{% if paper.year %}, {{ paper.year }}{% endif %}
+      <span class="paper-journal"><em>{{ paper.journal }}</em>{% if paper.volume %}, {{ paper.volume }}{% if paper.issue %}({{ paper.issue }}){% endif %}{% endif %}{% if paper.year %}, {{ paper.year }}{% endif %}</span>
     {% endif %}
     <br>
   </li>
