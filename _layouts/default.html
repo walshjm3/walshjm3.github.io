@@ -123,6 +123,10 @@
       /* Top bar has no links now, so hide the empty mobile menu button */
       #navbar .navbar-toggler { display: none; }
 
+      /* Pin the top bar to the 56px the page reserves for it, so the
+         progress-bar script's padding reset after load doesn't shift the page */
+      #navbar { min-height: 56px; }
+
       /* Email and CV under the photo */
       .profile-info {
         margin-top: 0.75rem;
