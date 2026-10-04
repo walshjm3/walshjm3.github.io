@@ -75,6 +75,7 @@
 
       /* Section headers with a horizontal rule underneath */
       .post article h2 {
+        font-size: 1.75rem;
         color: var(--global-theme-color);
         border-bottom: 2px solid var(--accent-light);
         padding-bottom: 8px;
@@ -82,23 +83,36 @@
         margin-bottom: 1rem;
       }
 
-      /* Left column holds the photo; right column holds all content */
+      /* Grid: name above the content column, photo to its left,
+         photo top lines up with the first paragraph */
       .post article {
-        display: flex;
-        align-items: flex-start;
-        gap: 2.5rem;
+        display: grid;
+        grid-template-columns: 220px minmax(0, 1fr);
+        grid-template-areas:
+          ".     name"
+          "photo content";
+        column-gap: 2.5rem;
+        align-items: start;
       }
 
-      .post article > .clearfix {
-        flex: 1;
-        min-width: 0;
+      .site-name { grid-area: name; }
+      .post article > .profile { grid-area: photo; }
+      .post article > .clearfix { grid-area: content; }
+
+      /* Name: same size and weight as the section headers, no rule */
+      .post article .site-name {
+        font-size: 1.75rem;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: left;
+        color: var(--global-theme-color);
+        margin: 0 0 1rem;
       }
 
       /* Photo column stays in view while scrolling */
       .profile.float-left {
         float: none !important;
-        flex: 0 0 220px;
-        width: 220px;
+        width: auto;
         margin: 0;
         position: sticky;
         top: 5rem;
@@ -108,15 +122,6 @@
 
       /* Top bar has no links now, so hide the empty mobile menu button */
       #navbar .navbar-toggler { display: none; }
-
-      /* Name above the photo */
-      .profile-name {
-        font-weight: 500;
-        font-size: 1.5rem;
-        line-height: 1.2;
-        margin-bottom: 0.75rem;
-        color: var(--global-theme-color);
-      }
 
       /* Email and CV under the photo */
       .profile-info {
@@ -136,33 +141,30 @@
 
       /* Medium windows: keep the sidebar, but slimmer */
       @media (max-width: 991.98px) {
-        .post article { gap: 1.5rem; }
-
-        .profile.float-left {
-          flex-basis: 180px;
-          width: 180px;
+        .post article {
+          grid-template-columns: 180px minmax(0, 1fr);
+          column-gap: 1.5rem;
         }
 
-        .profile-name { font-size: 1.3rem; }
         .profile-info { font-size: 0.8rem; }
       }
 
-      /* Small screens: the photo moves above the text, centered */
+      /* Small screens: photo centered, then the name, then the text */
       @media (max-width: 639.98px) {
         .post article {
-          flex-direction: column;
-          align-items: stretch;
-          gap: 1.5rem;
+          grid-template-columns: minmax(0, 1fr);
+          grid-template-areas:
+            "photo"
+            "name"
+            "content";
         }
 
         .profile.float-left {
           position: static;
-          flex: none;
           width: 220px;
-          margin: 0 auto;
+          margin: 0 auto 1.5rem;
         }
 
-        .profile-name,
         .profile-info { text-align: center; }
       }
     </style>
@@ -227,8 +229,8 @@
       <div class="post">
 
         <article>
+          <h1 class="site-name">Jennifer M. Walsh</h1>
           <div class="profile float-left">
-            <div class="profile-name">Jennifer M. Walsh</div>
             <figure>
               <img
                 src="/assets/img/avatar.png?94c478c1ba3be7126c3c62ca71f77089"
