@@ -57,6 +57,10 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"
     >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    >
 
     <!-- Site Icon -->
     <link rel="shortcut icon" href="/assets/img/icon.png">
@@ -68,15 +72,45 @@
     <style>
       :root {
         --accent-light: #4a6fc0; /* lighter shade of the theme navy, for rules */
+        --global-text-color: #363636;
+        --heading-color: #222;
       }
 
       /* Wider page so the sidebar doesn't squeeze the text column */
       .container { max-width: 1040px; }
 
-      /* Section headers with a horizontal rule underneath */
-      .post article h2 {
-        font-size: 1.75rem;
+      /* Typography: Noto Sans, 14px, dark gray text; navy only for accents */
+      body {
+        font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--global-text-color);
+      }
+
+      /* [SSRN] links: theme navy instead of main.css's plain blue */
+      .post article a.paper-link { color: var(--global-theme-color); }
+
+      .post article strong,
+      .post article b { color: var(--heading-color); font-weight: 700; }
+
+      /* Paper titles: bold dark gray instead of blue; navy on hover */
+      .post article a.paper-title,
+      .post article a.paper-title:visited {
+        color: var(--heading-color);
+        font-weight: 700;
+      }
+
+      .post article a.paper-title:hover {
         color: var(--global-theme-color);
+        text-decoration: none;
+      }
+
+      /* Section headers with a navy rule underneath */
+      .post article h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--heading-color);
         border-bottom: 2px solid var(--accent-light);
         padding-bottom: 8px;
         margin-top: 2rem;
@@ -101,11 +135,11 @@
 
       /* Name: same size and weight as the section headers, no rule */
       .post article .site-name {
-        font-size: 1.75rem;
-        font-weight: 300;
+        font-size: 1.5rem;
+        font-weight: 700;
         line-height: 1.2;
         text-align: left;
-        color: var(--global-theme-color);
+        color: var(--heading-color);
         margin: 0 0 1rem;
       }
 
