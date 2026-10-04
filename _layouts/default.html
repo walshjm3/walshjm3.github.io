@@ -91,26 +91,26 @@
       /* [SSRN] links: theme navy instead of main.css's plain blue */
       .post article a.paper-link { color: var(--global-theme-color); }
 
-      /* Abstract toggle: slightly smaller navy text with a small arrow */
+      /* Abstract toggle: slightly smaller gray text with a small arrow; navy on hover */
       .post article a.abstract-toggle {
         font-size: 0.9em;
-        color: var(--global-theme-color);
+        color: #6b6b6b;
         text-decoration: none;
         cursor: pointer;
         gap: 0.35em;
       }
 
-      .post article a.abstract-toggle:hover { color: var(--accent-light); }
+      .post article a.abstract-toggle:hover { color: var(--global-theme-color); }
 
       .post article a.abstract-toggle i {
         font-size: 0.8em;
         color: inherit;
       }
 
-      /* Abstract text: same gray, italic */
+      /* Abstract text: navy, italic */
       .post article .abstract-text,
       .post article .abstract-text p {
-        color: #6b6b6b;
+        color: var(--global-theme-color);
         font-style: italic;
       }
 
