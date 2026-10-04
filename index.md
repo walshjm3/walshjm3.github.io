@@ -85,7 +85,7 @@ title: Home
     {% endif %}
     <br>
     {% if paper.journal %}
-      <em>{{ paper.journal }}</em>, <em>{{ paper.year }}</em>
+      <em>{{ paper.journal }}</em>{% if paper.volume %}, {{ paper.volume }}{% if paper.issue %}({{ paper.issue }}){% endif %}{% endif %}{% if paper.year %}, {{ paper.year }}{% endif %}
     {% endif %}
     <br>
   </li>
