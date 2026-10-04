@@ -64,15 +64,17 @@
     <!-- Main site CSS -->
     <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
 
-    <!-- Layout tweaks: section rules and photo beside the intro (stacks on mobile) -->
+    <!-- Layout tweaks: section rules and a sticky left photo column (stacks on mobile) -->
     <style>
       :root {
         --accent-light: #4a6fc0; /* lighter shade of the theme navy, for rules */
       }
 
+      /* Wider page so the sidebar doesn't squeeze the text column */
+      .container { max-width: 1040px; }
+
       /* Section headers with a horizontal rule underneath */
       .post article h2 {
-        clear: both;
         color: var(--global-theme-color);
         border-bottom: 2px solid var(--accent-light);
         padding-bottom: 8px;
@@ -80,13 +82,41 @@
         margin-bottom: 1rem;
       }
 
-      /* Photo: portrait crop to the left of the intro text */
+      /* Left column holds the photo; right column holds all content */
+      .post article {
+        display: flex;
+        align-items: flex-start;
+        gap: 2.5rem;
+      }
+
+      .post article > .clearfix {
+        flex: 1;
+        min-width: 0;
+      }
+
+      /* Photo column stays in view while scrolling */
       .profile.float-left {
+        float: none !important;
+        flex: 0 0 220px;
         width: 220px;
-        margin: 0 2.5rem 1rem 0;
+        margin: 0;
+        position: sticky;
+        top: 5rem;
       }
 
       .profile figure { margin: 0; }
+
+      /* Name and email under the photo */
+      .profile-info {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+      }
+
+      .profile-name {
+        font-weight: 500;
+        font-size: 1.05rem;
+        color: var(--global-theme-color);
+      }
 
       .profile img {
         width: 220px;
@@ -97,10 +127,19 @@
 
       /* On small screens the photo moves above the text, centered */
       @media (max-width: 768px) {
-        .profile.float-left {
-          float: none !important;
-          margin: 0 auto 1.5rem;
+        .post article {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 1.5rem;
         }
+
+        .profile.float-left {
+          position: static;
+          flex: none;
+          margin: 0 auto;
+        }
+
+        .profile-info { text-align: center; }
       }
     </style>
 
@@ -141,8 +180,8 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
 
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
+          <div class="collapse navbar-collapse text-left" id="navbarNav">
+            <ul class="navbar-nav mr-auto flex-nowrap">
               <li class="nav-item active">
                 <a class="nav-link" href="/">
                   <span class="sr-only">(current)</span>
@@ -199,6 +238,10 @@
                 >
               </picture>
             </figure>
+            <div class="profile-info">
+              <div class="profile-name">Jennifer M. Walsh</div>
+              <a href="mailto:%6A%65%6E%6E%69%66%65%72%77%61%6C%73%68@%67.%68%61%72%76%61%72%64.%65%64%75">jenniferwalsh@g.harvard.edu</a>
+            </div>
           </div>
           <div class="clearfix">
             {{ content }}
