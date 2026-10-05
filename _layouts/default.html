@@ -71,9 +71,9 @@
     <!-- Layout tweaks: section rules and a sticky left photo column (stacks on mobile) -->
     <style>
       :root {
-        --accent-light: #4a6fc0; /* lighter shade of the theme navy, for rules */
-        --global-text-color: #363636;
-        --heading-color: #222;
+        --accent-light: #2560c2; /* brighter blue than the theme navy, for rules */
+        --global-text-color: #1f1914;
+        --heading-color: #1f1914;
       }
 
       /* Wider page so the sidebar doesn't squeeze the text column */
@@ -94,7 +94,7 @@
       /* Abstract toggle: slightly smaller gray text with a small arrow; navy on hover */
       .post article a.abstract-toggle {
         font-size: 0.9em;
-        color: #6b6b6b;
+        color: #574e46;
         text-decoration: none;
         cursor: pointer;
         gap: 0.35em;
@@ -184,14 +184,21 @@
       /* Top bar has no links now, so hide the empty mobile menu button */
       #navbar .navbar-toggler { display: none; }
 
-      /* Pin the top bar to the 56px the page reserves for it, so the
+      /* Pin the top bar to a slim 32px and reserve the same space for it, so the
          progress-bar script's padding reset after load doesn't shift the page */
-      #navbar { min-height: 56px; }
+      #navbar { height: 32px; min-height: 32px; padding-top: 0; padding-bottom: 0; overflow: hidden; }
+      body.fixed-top-nav { padding-top: 32px; }
+      progress { top: 32px; }
+
+      /* Scroll progress bar: same color as the section rules */
+      progress { color: var(--accent-light); }
+      progress::-webkit-progress-value { background-color: var(--accent-light); }
+      progress::-moz-progress-bar { background-color: var(--accent-light); }
 
       /* Email and CV under the photo */
       .profile-info {
         margin-top: 0.75rem;
-        font-size: 0.9rem;
+        font-size: 14px;
       }
 
       .profile-info div { color: var(--global-text-color); }
@@ -199,9 +206,6 @@
       .profile img {
         width: 100%;
         height: auto;
-        aspect-ratio: 220 / 270;
-        object-fit: cover;
-        object-position: 43% top;
       }
 
       /* Medium windows: keep the sidebar, but slimmer */
@@ -298,7 +302,7 @@
           <div class="profile float-left">
             <figure>
               <img
-                src="/assets/img/avatar.png?94c478c1ba3be7126c3c62ca71f77089"
+                src="/assets/img/WalshJenny_cropped.jpg"
                 class="img-fluid z-depth-1 rounded"
                 alt="Jennifer M. Walsh"
               >
