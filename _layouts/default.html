@@ -203,9 +203,13 @@
 
       .profile-info div { color: var(--global-text-color); }
 
+      /* Trim a bit of the space above the head (lower the 2672 to trim more) */
       .profile img {
         width: 100%;
         height: auto;
+        aspect-ratio: 2188 / 2672;
+        object-fit: cover;
+        object-position: bottom;
       }
 
       /* Medium windows: keep the sidebar, but slimmer */
