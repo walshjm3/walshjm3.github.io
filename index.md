@@ -30,8 +30,12 @@ title: Home
   {% for paper in sorted_works %}
   <li>
     <strong>
+      {% if paper.link %}
       <a href="{{ paper.link }}" target="_blank" rel="noopener" class="paper-title">
-        {{ paper.title }}</a></strong>
+        {{ paper.title }}</a>
+      {% else %}
+      <span class="paper-title">{{ paper.title }}</span>
+      {% endif %}</strong>
     {% if paper.authors %}
       (with {{ paper.authors }})
     {% endif %}
