@@ -13,7 +13,7 @@ title: Home
 
 ## Job Market Paper
 
-<ol class="paper-list" style="list-style: none;">
+<ol class="paper-list">
   <li>
     <strong>
       <a href="/assets/walsh_jmp.pdf" target="_blank" rel="noopener" class="paper-title">
