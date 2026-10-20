@@ -19,6 +19,7 @@ title: Home
       <a href="/assets/walsh_jmp.pdf" target="_blank" rel="noopener" class="paper-title">
         Capital Regulation as a Barrier to Bank Consolidation</a></strong>
     (with Nathan Kaplan)
+    [<a href="/assets/walsh_jmp.pdf" target="_blank" rel="noopener" class="paper-link">PDF</a>]
   </li>
 </ol>
 
