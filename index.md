@@ -66,6 +66,19 @@ title: Home
   {% endfor %}
 </ol>
 
+## Works in Progress
+
+<ol class="paper-list">
+  <li>
+    <strong><span class="paper-title">Merger Review by Market Definition: Evidence from Banking</span></strong>
+    (with Harry Cooperman)
+  </li>
+  <li>
+    <strong><span class="paper-title">Banking in the Town Square</span></strong>
+    (with Iris Li)
+  </li>
+</ol>
+
 ## Publications
 
 <ol class="paper-list">
