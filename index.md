@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<p>Hello! I am a Ph.D. student in Business Economics at Harvard. My research fields are industrial organization and finance. I study banking, antitrust, corporate governance: my job market paper shows that binding bank capital regulation has constrained M&A between U.S. banks, so much so that without requiring banks to meet capital requirements post-merger, the U.S. would have 19% fewer banks today.</p>
+<p>Hello! I am a Ph.D. student in Business Economics at Harvard. My research fields are industrial organization and finance. I study banking, antitrust, corporate governance.</p>
 
 
 <p>I was supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a> and am affiliated with the <a href="https://caps.gov.harvard.edu/" rel="external nofollow noopener" target="_blank">Center for American Political Studies</a>. I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a>.</p>
