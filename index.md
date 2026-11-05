@@ -3,13 +3,14 @@ layout: default
 title: Home
 ---
 
-<p>Hello! I am a Ph.D. student in Business Economics at Harvard, where I was supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a> and am affiliated with the <a href="https://caps.gov.harvard.edu/" rel="external nofollow noopener" target="_blank">Center for American Political Studies</a>. My research fields are industrial organization and financial economics.</p>
+<p>Hello! I am a Ph.D. student in Business Economics at Harvard. My research fields are industrial organization and finance. I study banking, antitrust, corporate governance: my job market paper shows that binding bank capital regulation has constrained M&A between U.S. banks, so much so that without requiring banks to meet capital requirements post-merger, the U.S. would have 19% fewer banks today.</p>
+
+
+<p>I was supported by the <a href="https://www.nsfgrfp.org/" rel="external nofollow noopener" target="_blank">NSF Graduate Research Fellowship</a> and am affiliated with the <a href="https://caps.gov.harvard.edu/" rel="external nofollow noopener" target="_blank">Center for American Political Studies</a>. I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a>.</p>
 
 
 <p><b>I am on the 2026-2027 job market.</b></p>
 
-
-<p>I graduated from Harvard with an A.B. in Physics &amp; Mathematics. Before starting my Ph.D., I was a management consultant at <a href="https://www.bain.com/" rel="external nofollow noopener" target="_blank">Bain &amp; Company</a>.</p>
 
 ## Job Market Paper
 
@@ -20,6 +21,18 @@ title: Home
         Capital Regulation as a Barrier to Bank Consolidation</a></strong>
     (with Nathan Kaplan)
     [<a href="/assets/walsh_jmp.pdf" target="_blank" rel="noopener" class="paper-link">PDF</a>]
+    <br>
+    <a 
+       class="abstract-toggle d-inline-flex align-items-center collapsed"
+       data-toggle="collapse"
+       href="#collapse-jmp"
+       role="button"
+       aria-expanded="false"
+       aria-controls="collapse-jmp"
+    ><i class="fas fa-caret-right"></i> Abstract</a>
+    <div class="abstract-text collapse ml-4 mb-3" id="collapse-jmp">
+      <p>While thousands of mergers have reshaped the United States banking sector since the 1990s, the U.S. still has more banks per capita than other large countries. We show that equity capital regulation has meaningfully depressed bank M&amp;A activity by making leverage-increasing financing expensive. Using a 2001 policy change in accounting standards as an instrument for the post-merger regulatory capital of target banks, we find that a standard deviation increase in capital raises the probability of a bank being purchased within a year by approximately 50%. Estimating a structural model of banks choosing merger partners subject to capital constraints, we find that weakening capital requirements around M&amp;A since 1992 would have led to more consolidation and 19% fewer operating banks in 2022. Fixed cost efficiencies realized from additional mergers are of similar magnitude to consumer welfare losses from lower competition in deposit and loan markets. However, pairing weakened requirements with additional antitrust screening could have retained efficiencies while protecting consumer surplus.</p>
+    </div>
   </li>
 </ol>
 
