@@ -92,7 +92,7 @@ title: Home
   </li>
 </ol>
 
-## (Pre-Economics) Publications
+## Publications (Pre-Economics)
 
 <ol class="paper-list">
   {% assign sorted_pubs = site.publications | sort: 'id' | reverse %}
