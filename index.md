@@ -85,10 +85,34 @@ title: Home
   <li>
     <strong><span class="paper-title">Merger Review by Market Definition: Evidence from Banking</span></strong>
     (with Harry Cooperman)
+    <br>
+    <a 
+       class="abstract-toggle d-inline-flex align-items-center collapsed"
+       data-toggle="collapse"
+       href="#collapse-wip-merger-review"
+       role="button"
+       aria-expanded="false"
+       aria-controls="collapse-wip-merger-review"
+    ><i class="fas fa-caret-right"></i> Abstract</a>
+    <div class="abstract-text collapse ml-4 mb-3" id="collapse-wip-merger-review">
+      <p>How does antitrust merger review shape firms’ acquisition decisions, and is merger deterrence costly to firms? Unlike the DOJ/FTC, the Federal Reserve makes the geographic market definitions used for bank merger screening available ex ante, allowing banks to anticipate scrutiny and potential divestiture requirements before proposing mergers. Using panel variation in map boundaries obtained through FOIA requests, we study how expected merger scrutiny affects banks’ choice of merger partners and estimate the costs of deterrence.</p>
+    </div>
   </li>
   <li>
     <strong><span class="paper-title">Banking in the Town Square</span></strong>
     (with Iris Li)
+    <br>
+    <a 
+       class="abstract-toggle d-inline-flex align-items-center collapsed"
+       data-toggle="collapse"
+       href="#collapse-wip-town-square"
+       role="button"
+       aria-expanded="false"
+       aria-controls="collapse-wip-town-square"
+    ><i class="fas fa-caret-right"></i> Abstract</a>
+    <div class="abstract-text collapse ml-4 mb-3" id="collapse-wip-town-square">
+      <p>Do bank branches reduce foot traffic to neighboring businesses? Motivated by the potential for negative foot traffic externalities, local officials have proposed limiting the physical presence of bank branches more stringently than retail and grocery stores. We use foot traffic data and a staggered difference-in-differences design around branch openings and closings to test for potential negative spillovers. With a structural model of local officials balancing the proximate negative externalities of foot traffic against the benefits of local bank presence, we evaluate the effectiveness of recently proposed zoning policies.</p>
+    </div>
   </li>
 </ol>
 
